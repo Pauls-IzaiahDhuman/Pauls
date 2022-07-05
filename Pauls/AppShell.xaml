@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--################Hamburger Menu################-->
+    
+    <!--<Shell
+    x:Class="Pauls.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Pauls"
+    FlyoutBackgroundColor="Red"
+    Shell.FlyoutBehavior="Flyout"
+         BackgroundColor="Red" 
+   >
+
+
+    <Shell.FlyoutHeader>
+        <Grid>
+            <Image Source="dotnet_bot.png"
+          HeightRequest="142"
+          VerticalOptions="Center"
+          WidthRequest="230"
+          HorizontalOptions="Center" 
+                   
+                   />
+        </Grid>
+    </Shell.FlyoutHeader>
+    <ShellContent  Title="Line"  ContentTemplate="{DataTemplate local:MainPage}" />
+    <ShellContent Title="In-Gate" ContentTemplate="{DataTemplate local:NewPage1}" />
+    <ShellContent Title="Out-Gate" ContentTemplate="{DataTemplate local:NewPage2}" />
+</Shell>-->
+
+
+<!--################Tab Bar Menu################-->
+<Shell
+    x:Class="Pauls.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Pauls"
+    FlyoutBackgroundColor="Red"
+    Shell.FlyoutBehavior="Flyout"
+         BackgroundColor="Red" 
+   >
+    <TabBar>
+        <Tab Title="Main"
+           >
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+        <Tab Title="Pg1"
+           >
+            <ShellContent ContentTemplate="{DataTemplate local:NewPage1}" />
+        </Tab>
+        <Tab Title="Pg2"
+           >
+            <ShellContent ContentTemplate="{DataTemplate local:NewPage2}" />
+        </Tab>
+    </TabBar>
+</Shell>
